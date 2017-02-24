@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>iiwa_description</name>
+  <version>1.4.0</version>
+  <description>This package contains the URDF of the KUKA LBR IIWA robot. It is forked from iiwa_stack repository of Salvo Virga: https://github.com/SalvoVirga/iiwa_stack </description>
+  <author email="salvo.virga@tum.de">Salvo Virga</author>
+  <maintainer email="keivan.zavari@frsrobotics.com">Keivan Zavari</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>urdf</build_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>rviz</run_depend>
+  <run_depend>xacro</run_depend>
+  <test_depend>roslaunch</test_depend>
+</package>

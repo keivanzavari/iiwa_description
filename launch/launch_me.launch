@@ -1,0 +1,9 @@
+<launch>
+  <group ns="load_iiwa__">
+    <include file="$(find iiwa_description)/launch/load_iiwa14.launch"/>
+  </group>
+
+  <group ns="test_iiwa__">
+    <include file="$(find iiwa_description)/launch/test_iiwa14.launch"/>
+  </group>
+</launch>
