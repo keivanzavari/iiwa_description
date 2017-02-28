@@ -348,6 +348,15 @@
     <link name="${robot_name}_link_ee_kuka">
     </link>
     
+    <joint name="${robot_name}_joint_ee_pneumatic" type="fixed">
+      <parent link="${robot_name}_link_ee_kuka"/>
+      <child link="${robot_name}_link_ee_pneumatic"/>
+      <origin xyz="0 0 0.026" rpy="0 0 0"/>
+    </joint>
+    
+    <link name="${robot_name}_link_ee_pneumatic">
+    </link>
+    
     <!--Extensions -->
     <xacro:iiwa_gazebo robot_name="${robot_name}" />
     <xacro:iiwa_transmission hardware_interface="${hardware_interface}"/>
